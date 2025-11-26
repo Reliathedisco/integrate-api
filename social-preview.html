@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1280, height=640">
+    <title>Integrate API - Social Preview</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            width: 1280px;
+            height: 640px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        /* Background pattern */
+        .pattern {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0.1;
+            background-image: 
+                repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.1) 35px, rgba(255,255,255,.1) 70px),
+                repeating-linear-gradient(-45deg, transparent, transparent 35px, rgba(255,255,255,.05) 35px, rgba(255,255,255,.05) 70px);
+        }
+        
+        /* Main container */
+        .container {
+            z-index: 1;
+            text-align: center;
+            color: white;
+            padding: 60px;
+        }
+        
+        /* Early Access Badge */
+        .badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        /* Logo/Title */
+        .logo {
+            font-size: 72px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            text-shadow: 0 4px 20px rgba(0,0,0,0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        .logo-icon {
+            font-size: 64px;
+        }
+        
+        /* Tagline */
+        .tagline {
+            font-size: 28px;
+            font-weight: 400;
+            margin-bottom: 40px;
+            opacity: 0.95;
+            line-height: 1.4;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Integration icons */
+        .integrations {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .integration-badge {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            padding: 12px 24px;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: 600;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .integration-icon {
+            width: 24px;
+            height: 24px;
+            background: white;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+        }
+        
+        /* Website URL */
+        .url {
+            position: absolute;
+            bottom: 40px;
+            right: 60px;
+            font-size: 18px;
+            opacity: 0.8;
+            font-weight: 500;
+        }
+        
+        /* Decorative elements */
+        .circle {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.05);
+        }
+        
+        .circle-1 {
+            width: 300px;
+            height: 300px;
+            top: -100px;
+            left: -100px;
+        }
+        
+        .circle-2 {
+            width: 200px;
+            height: 200px;
+            bottom: -80px;
+            right: -80px;
+        }
+        
+        .circle-3 {
+            width: 150px;
+            height: 150px;
+            top: 100px;
+            right: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="pattern"></div>
+    <div class="circle circle-1"></div>
+    <div class="circle circle-2"></div>
+    <div class="circle circle-3"></div>
+    
+    <div class="container">
+        <div class="badge">🚀 Early Access</div>
+        
+        <div class="logo">
+            <span class="logo-icon">⚡</span>
+            <span>Integrate API</span>
+        </div>
+        
+        <div class="tagline">
+            Production-ready API integrations for Next.js<br>
+            Stop wiring auth, billing, and webhooks — start shipping features
+        </div>
+        
+        <div class="integrations">
+            <div class="integration-badge">
+                <div class="integration-icon" style="background: #635BFF; color: white;">S</div>
+                Stripe Ready
+            </div>
+            <div class="integration-badge">
+                <div class="integration-icon" style="background: #3ECF8E; color: white;">S</div>
+                Supabase
+            </div>
+            <div class="integration-badge">
+                <div class="integration-icon" style="background: #5A67D8; color: white;">C</div>
+                Clerk Soon
+            </div>
+        </div>
+    </div>
+    
+    <div class="url">integrateapi.io</div>
+</body>
+</html>

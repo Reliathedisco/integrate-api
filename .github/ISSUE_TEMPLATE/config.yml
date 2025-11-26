@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📅 Roadmap & Planning
+    url: https://github.com/Reliathedisco/integrate-api/discussions/categories/roadmap
+    about: View our roadmap and upcoming features
+  - name: 💬 Community Discussion
+    url: https://github.com/Reliathedisco/integrate-api/discussions
+    about: Ask questions and discuss with the community
+  - name: 📚 Documentation
+    url: https://www.integrateapi.io/docs
+    about: Check our documentation first
